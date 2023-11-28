@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composición de Componentes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <container-component>
+      <header-component slot="header">
+        <div class="header-slot-label">Header Slot</div>
+        <div>
+          <h1><B>Nombre:</B> Jonathan Cortez  <br> <B>NRC:</B> 14385
+          </h1>
+
+          <h2>Composición:</h2>
+          <p>En el contexto de Web Components, la composición se refiere a la capacidad de construir interfaces <br> de usuario complejas combinando varios componentes más pequeños y especializados.</p>
+         
+        </div>
+      </header-component>
+
+      <list-component slot="content">
+        <div class="content-slot-label">Content Slot</div>
+        <h2>Listado de Slots</h2>
+        <ul>
+          <li>Slots por defecto</li>
+          <li>Slots nombrados</li>
+          <li>Honda</li>
+        </ul>
+      </list-component>
+
+      <form-component slot="footer">
+        <div class="footer-slot-label">Footer Slot</div>
+         <h2>Slots:</h2>
+          <p>Los slots son áreas designadas en un componente que permiten la inserción de contenido desde el exterior. <br> Son esenciales para la composición flexible de componentes.</p>
+      </form-component>
+    </container-component>
+  </div>
+  
+    <script src="Componentes.js"></script>
+</body>
+</html>
